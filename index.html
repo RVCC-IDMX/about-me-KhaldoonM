@@ -2,44 +2,223 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
- 
+    <title>About Me</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
 </head>
 <body>
+
     <header>
-        <h1>About me</h1>
+        <!-- -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="New folder/logo-96X96 (1).svg" alt="Blue origami logo">
+                <h1>Web Dev I</h1>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio" class="nav-links">Bio</a></li>
+                    <li><a href="#gallery" class="nav-links">Gallery</a></li>
+                    <li><a href="#lit" class="nav-links">Blog</a></li>
+                    <li><a href="#contact" class="nav-links">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-   <h1>web dev 1</h1>
-    <link rel="stylesheet" href="style.css"> 
     
-    <section id="hero"><img src="New folder/avataaars-1.png">
-    <h1>Khaldoon Mesheh</h1>
-    <h1>Somerset New Jersey</h1>
-  
-    <section id="bio">
-        <div>
-            <p>I want to be...</p>
-            <p>Cybersecurity worker</p>
-            <p>successful</p>
-            <p>Hardworking</p>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+                <img src="New folder/avataaars-1.png" alt="Avatar picture of me">
 
-    <section id="hobbies">
-        <h2>My Hobbies and Intrests:</h2>
-        <ul>
-            <li>Cars</li>
-            <li>Coding</li>
-            <li>pc building</li>
-            <li> Skateboarding</li>
-            <li>Video Games</li>
-            <li>Travel and Vlogs</li>
-        </ul>
-    </section>
+            <div>
+                <p>Khaldoon Mesheh</p>
+                <p>Somerset, New Jersey</p>
+            </div>
+        </section>
 
- <footer>
-        <p>&copy; 2025 Khaldoon Mesheh</p>
+        <section id="bio">
+            <div>
+                <p>I want to be...</p>
+                <p>A cybersecurity major</p>
+                <p>Successful</p>
+                <p>Hardworking</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies and Intrests:</h2>
+            <ul>
+                <li>Cars</li>
+                <li>Videogames</li>
+                <li>Video editing</li>
+                <li>Coding</li>
+                <li>Travling</li>
+                <li>Vlogging</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+
+            <h2>Photo Gallery:</h2>
+
+            <hr>
+
+            <figure>
+                <img src="" alt="1">
+                <figcaption>Place holder 1</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="" alt="2">
+                <figcaption>Place holder 2</figcaption>
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="" alt="3">
+                <figcaption>Place holder 3</figcaption>
+            </figure>
+
+        </section>
+
+        <article id="lit">
+
+            <h2>Place Holder</h2>
+
+            <div>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+            </div>
+
+        </article>
+
+        <section id="video">
+
+            <h2>My favorite movie scene</h2>
+
+            <iframe id="myvideo" width="560" height="315" src="https://www.youtube.com/watch?v=FilGjcCseBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div>
+
+                <p id="vidcaption">
+                    Im a big fan of all things marvel and superheros and spiderman is one of my favorite superheros so I really enjoy this scene
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact form</h2>
+
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+
+                    <!-- Name -->
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <!-- Email -->
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <!-- Phone type -->
+                        <label for="phonetype">Phone type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="Moble">Moble</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+
+                    <!-- Message -->
+                        <label for="message">Comments (optional)</label>
+                        <textarea id="message" name="message" rows="8"></textarea>
+
+                    <!-- Reply -->
+                    <fieldset>
+                        <legend>Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                <label for="message-yes">Yes a reply would be nice.</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="message-no" name="reply" value="No reply please" checked>
+                                <label for="message-no">No, thanks.</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <button type="submit">Send</button>
+
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        © 2025 - Khaldoon Mesheh
+
     </footer>
+
 </body>
+
 </html>
