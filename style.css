@@ -1,7 +1,7 @@
 body {
     font-family:Oswald;
     background-color: #3AF2EF;
-    color: #000000;
+    color: #ffffff;
 }
 
 h3, h4, h5, h6{
@@ -217,7 +217,7 @@ fieldset{
 
 legend{
     background-color: #3AF2EF;
-    color: #000000;
+    color: #ffffff;
     padding: .5em;
 }
 
@@ -228,7 +228,7 @@ legend{
 
 #contact button{
     background-color: #3AF2EF;
-    color: #000000;
+    color: #ffffff;
     max-width: 400px;
     width: 50%;
     justify-self: center;
